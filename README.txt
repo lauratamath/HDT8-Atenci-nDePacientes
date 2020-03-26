@@ -1,0 +1,3 @@
+Sistema  de  atención  de  pacientes  que  llegan  a  la  sección  de  Emergencias de un hospital. Al llegar un paciente, se llena su ficha  de ingreso con:Nombre del paciente, descripción del síntoma,  código de emergencia.
+El código de emergencia es una letra de la Aa la E, que indica la prioridad con que debe ser atendido el paciente. La prioridad A es la que más rápido debe ser atendida y la E es la que puede atenderse más lentamente, ya que no presenta una condición mortal o de gran peligro para el paciente.
+El sistema  permite indicar cual paciente debe ser atendido. Así,  que cuando el doctor pide el siguiente paciente, se retira de  la cola y se muestra su nombre, síntoma  y prioridad
