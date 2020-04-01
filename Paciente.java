@@ -36,7 +36,7 @@ public class Paciente implements Comparable<Paciente>{
     	return prioridad;
     }
 
-    public String setPrioridad(String prioridad){
+    public void setPrioridad(String prioridad){
     	this.prioridad = prioridad;
     }
 

@@ -4,7 +4,9 @@
 *@version /03/2020
 *referencias: Documentos subidos por Douglas a canvas
 **/
-import java.util.*; 
+import java.util.Iterator;
+import java.util.Vector;
+
 
 public class VectorHeap<E extends Comparable<E>> implements Iterable, PriorityQueue<E>{
 	protected Vector<E> dato; 
@@ -19,7 +21,7 @@ public class VectorHeap<E extends Comparable<E>> implements Iterable, PriorityQu
 		Devuelve un String conectando todos los pacientes**/
 		String ans = "";
 		Iterator<Paciente> iterator = tPacientes.iterator();
-		while(iterator.hashNext()){
+		while(iterator.hasNext()){
 			ans += iterator.next().toString() + "\n";
 		} return ans;
 	}

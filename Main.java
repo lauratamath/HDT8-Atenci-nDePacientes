@@ -16,9 +16,9 @@ public class Main{
         FileReader fr = new FileReader(archivo);
         BufferedReader br1 = new BufferedReader(fr);
         String linea = "";
-        Scanner scanner = new Scanner(fr);
+        Scanner sc = new Scanner(fr);
         
-        Scanner teclado = new Scanner(System.in);
+        Scanner sc2 = new Scanner(System.in);
         String seleccion;
         
         
@@ -28,14 +28,15 @@ public class Main{
         PriorityQueueC<Paciente> pendientes=new PriorityQueueC<Paciente>();
         VectorHeap<Paciente> tPacientes=new VectorHeap<Paciente>();
         
-        //Vector<Paciente> pacientes = new Vector<>();
+        System.out.println("\t----------  B I E N V E N I D O ----------");
         System.out.println("Ingrese 1 para realizar el programa implementando VectorHeap");
         System.out.println("Ingrese 2 para realizar el programa implementando PriorityQueueJCF");
         
-        String objeto=teclado.nextLine();
+        String objeto=sc2.nextLine();
+        System.out.println("\n-------------------");
 
-        while (scanner.hasNextLine()) {
-            linea = scanner.nextLine();
+        while (sc.hasNextLine()) {
+            linea = sc.nextLine();
             
             nombre = linea.substring(0, linea.indexOf(","));
             linea = linea.substring(linea.indexOf(",") + 2, linea.length());
@@ -68,10 +69,10 @@ public class Main{
         {
             System.out.println("1. Ver todos los pacientes");
             System.out.println("2. Ver siguiente en la lista");
-            System.out.println("3. Atender al paciente");
+            System.out.println("3. Atender  paciente");
             System.out.println("4. Salir");
-            seleccion=teclado.nextLine();
-            
+            seleccion=sc2.nextLine();
+            System.out.println("\n");
             //OPCION 1
             if (seleccion.equals("1") && objeto.equals("1")) 
             {
